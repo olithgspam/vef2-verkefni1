@@ -18,13 +18,13 @@ export async function parseQuestions() {
     const cleanLine = line.trim();
     if (!cleanLine) continue;
 
-    const parts = cleanLine.split(';');
+    const parts = cleanLine.split(',');
     
-    if (parts.length < 3) continue;
+    if (parts.length < 6) continue;
 
-    const question = parts[0].trim();
-    const answer = parts[1].trim();
-    const category = parts[2].trim();
+    const category = parts[1].trim();
+    const question = parts[4].trim();
+    const answer = parts[5].trim();
 
     questions.push({
       question,
