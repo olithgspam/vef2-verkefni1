@@ -101,3 +101,34 @@ button {
   background-color: #dc2626; /* Rauður */
   color: white;
 }
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+.score-box {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.score-box.correct {
+  color: #16a34a;
+  border: 2px solid #16a34a;
+}
+
+.score-box.incorrect {
+  color: #dc2626;
+  border: 2px solid #dc2626;
+}
